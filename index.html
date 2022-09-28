@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        button{
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+        }
+        #khong{
+            animation-name: game;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes game{
+            0%{background-color: red; left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 300px; top: 0px;}
+            50%{background-color: blue; left: 300px; top: 300px;}
+            75%{background-color: green; left: 0px; top: 300px;}
+            100%{background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+    <body>
+        <h1>Bạn có thấy mình đẹp không</h1>
+        <div>
+            <button>Có</button>
+            <button id="khong" onclic>ok</button>
+        </div>
+        <script>
+            function ok(){
+                alert("Khó vậy cũng làm được nữa hả ! Chúc mừng nha");
+            }
+            </script>
+    </body>
+</html>
